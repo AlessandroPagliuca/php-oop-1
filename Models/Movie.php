@@ -12,12 +12,12 @@ class Movie{
     /**
      * Construct function
      *
-     * @param [type] $title
-     * @param [type] $genre
-     * @param [type] $lenguage
-     * @param [type] $year
+     * @param [string] $title
+     * @param [array] $genre
+     * @param [string] $lenguage
+     * @param [int] $year
      */
-    public function __construct($title, $genre, $lenguage, $year){
+    public function __construct(string $title, array $genre, string $lenguage, int $year){
         $this->title = $title;
         $this->genre = $genre;
         $this->lenguage = $lenguage;
@@ -26,20 +26,24 @@ class Movie{
     }
 
     //Methods
-    public function getTitle(){
+    public function getTitle(): string
+    {
         return "Title: " . $this->title;
     }
 
-    public function getGenre(){
+    public function getGenre(): string
+    {
         $genreStr = implode(", ", $this->genre);
         return " Genre: " . $genreStr;
     }
 
-    public function getlenguage(){
+    public function getlenguage(): string
+    {
         return "Lenguage: " . $this->lenguage;
     }
 
-    public function getYear(){
+    public function getYear(): string
+    {
        return "Year: " . $this->year;
     }
 
