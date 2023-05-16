@@ -19,8 +19,13 @@ $movie1 = new Movie('Shark', 'Horror', 'en', '1988' );
 </head>
 <body>
     <main class="d-flex justify-content-center align-items-center">
-        <div>
-            <?php echo $movie1->getData()?>
+        <div class="card">
+            <div class="card-body">
+                <p><?php echo $movie1->getTitle()?></p>
+                <p><?php echo $movie1->getGenre()?></p>
+                <p><?php echo $movie1->getlenguage()?></p>
+                <p><?php echo $movie1->getYear()?></p>
+            </div>
         </div>
     </main>
 </body>

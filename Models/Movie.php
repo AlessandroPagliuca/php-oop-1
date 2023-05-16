@@ -25,9 +25,21 @@ class Movie{
 
     }
 
-    public function getData(){
-        return "Title: " . $this->title . ", Genre: " . $this->genre . "Lenguage:" . $this->lenguage . ", Year: " . $this->year;
+    //Methods
+    public function getTitle(){
+        return "Title: " . $this->title;
     }
 
+    public function getGenre(){
+        return " Genre: " . $this->genre;
+    }
+
+    public function getlenguage(){
+        return "Lenguage:" . $this->lenguage;
+    }
+
+    public function getYear(){
+       return "Year: " . $this->year;
+    }
 
 }
