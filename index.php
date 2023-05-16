@@ -2,6 +2,8 @@
 
 include __DIR__ .'/Models/Movie.php';
 
+include __DIR__ .'/Models/Genres.php';
+
 include __DIR__ .'/server/dbMovie.php';
 
 
