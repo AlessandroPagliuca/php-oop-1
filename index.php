@@ -19,7 +19,14 @@ $movie2 = new Movie('Puma', ['Drama','Action', 'Adventure'], 'it', '2005');
     <title>php-oop-1</title>
 </head>
 <body>
-    <main class="d-flex justify-content-center align-items-center">
+
+    <header class="text-center bg-dark">
+
+        <h1 class="p-5 text-white">List of Movies</h1>
+
+    </header>
+
+    <main class="d-flex justify-content-center align-items-center bg-dark">
         <div class="card movie">
             <div class="card-body">
                 <p><?php echo $movie1->getTitle()?></p>
