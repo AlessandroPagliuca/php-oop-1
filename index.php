@@ -2,6 +2,7 @@
 
 include __DIR__ .'/Models/Movie.php';
 
+$movie1 = new Movie('Shark', 'Horror', 'en', '1988' );
 
 ?>
 
@@ -18,7 +19,9 @@ include __DIR__ .'/Models/Movie.php';
 </head>
 <body>
     <main class="d-flex justify-content-center align-items-center">
-        <h1>ok</h1>
+        <div>
+            <?php echo $movie1->getData()?>
+        </div>
     </main>
 </body>
 </html>
