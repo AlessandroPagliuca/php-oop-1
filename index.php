@@ -2,8 +2,8 @@
 
 include __DIR__ .'/Models/Movie.php';
 
-$movie1 = new Movie('Shark', 'Horror', 'en', '1988');
-$movie2 = new Movie('Puma', 'Drama', 'it', '2005');
+$movie1 = new Movie('Shark', ['Horror', 'Catastrophic'], 'en', '1988');
+$movie2 = new Movie('Puma', ['Drama','Action', 'Adventure'], 'it', '2005');
 
 ?>
 

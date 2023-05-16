@@ -31,7 +31,8 @@ class Movie{
     }
 
     public function getGenre(){
-        return " Genre: " . $this->genre;
+        $genreStr = implode(", ", $this->genre);
+        return " Genre: " . $genreStr;
     }
 
     public function getlenguage(){
