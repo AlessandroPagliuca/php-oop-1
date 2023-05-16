@@ -2,8 +2,8 @@
 
 include __DIR__ .'/Models/Movie.php';
 
-$movie1 = new Movie('Shark', ['Horror', 'Catastrophic'], 'en', '1988');
-$movie2 = new Movie('Puma', ['Drama','Action', 'Adventure'], 'it', '2005');
+include __DIR__ .'/server/dbMovie.php';
+
 
 ?>
 
@@ -27,23 +27,17 @@ $movie2 = new Movie('Puma', ['Drama','Action', 'Adventure'], 'it', '2005');
     </header>
 
     <main class="d-flex justify-content-center align-items-center bg-dark">
-        <div class="card movie">
-            <div class="card-body">
-                <p><?php echo $movie1->getTitle()?></p>
-                <p><?php echo $movie1->getGenre()?></p>
-                <p><?php echo $movie1->getlenguage()?></p>
-                <p><?php echo $movie1->getYear()?></p>
+        <?php foreach ($movies as $movie) { ?>    
+            <div class="card movie">
+                <div class="card-body">
+                    <p><?php echo $movie->getTitle()?></p>
+                    <p><?php echo $movie->getGenre()?></p>
+                    <p><?php echo $movie->getlenguage()?></p>
+                    <p><?php echo $movie->getYear()?></p>
+                </div>
             </div>
-        </div>
+        <?php } ?>
 
-        <div class="card movie">
-            <div class="card-body">
-                <p><?php echo $movie2->getTitle()?></p>
-                <p><?php echo $movie2->getGenre()?></p>
-                <p><?php echo $movie2->getlenguage()?></p>
-                <p><?php echo $movie2->getYear()?></p>
-            </div>
-        </div>
     </main>
 </body>
 </html>
