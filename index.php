@@ -2,7 +2,8 @@
 
 include __DIR__ .'/Models/Movie.php';
 
-$movie1 = new Movie('Shark', 'Horror', 'en', '1988' );
+$movie1 = new Movie('Shark', 'Horror', 'en', '1988');
+$movie2 = new Movie('Puma', 'Drama', 'it', '2005');
 
 ?>
 
@@ -19,12 +20,21 @@ $movie1 = new Movie('Shark', 'Horror', 'en', '1988' );
 </head>
 <body>
     <main class="d-flex justify-content-center align-items-center">
-        <div class="card">
+        <div class="card movie">
             <div class="card-body">
                 <p><?php echo $movie1->getTitle()?></p>
                 <p><?php echo $movie1->getGenre()?></p>
                 <p><?php echo $movie1->getlenguage()?></p>
                 <p><?php echo $movie1->getYear()?></p>
+            </div>
+        </div>
+
+        <div class="card movie">
+            <div class="card-body">
+                <p><?php echo $movie2->getTitle()?></p>
+                <p><?php echo $movie2->getGenre()?></p>
+                <p><?php echo $movie2->getlenguage()?></p>
+                <p><?php echo $movie2->getYear()?></p>
             </div>
         </div>
     </main>

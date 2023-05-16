@@ -35,7 +35,7 @@ class Movie{
     }
 
     public function getlenguage(){
-        return "Lenguage:" . $this->lenguage;
+        return "Lenguage: " . $this->lenguage;
     }
 
     public function getYear(){
